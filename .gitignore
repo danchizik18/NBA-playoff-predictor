@@ -1,0 +1,10 @@
+myenv/
+
+data/
+*.csv
+*.json
+*.txt
+
+*.xlsx
+*.db
+
