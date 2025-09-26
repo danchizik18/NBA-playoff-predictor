@@ -1,16 +1,61 @@
-In this project, we used historical NBA data from the 2016-2024 seasons to predict playoff team performance. The entire process involved data cleaning and pre-processing, feature engineering, exploratory data analysis (EDA), model training (random forest), and sentiment analysis.
+📌 Overview
 
-Data Pre-Processing: 
-We utilized pandas to obtain and clean the data for every NBA season between 2016 and 2024. The dataset includes statistics for each team, such as field goals made, turnovers, rebounds, and more. We performed extensive data wrangling to ensure the dataset was ready for analysis.
+This project uses historical NBA data (2016–2024) to predict playoff team performance and forecast outcomes for the 2025 NBA Playoffs.
+We combined team statistics with fan sentiment from Reddit to capture both quantitative and qualitative drivers of playoff success.
 
-Exploratory Data Analysis (EDA): 
-With the cleaned data, we conducted EDA using pandas and visualized trends using matplotlib and seaborn. This step helped identify key patterns and relationships between different team statistics that could be predictive of playoff success.
+🔧 Tech Stack
 
-Predictive Modeling:
-Using scikit-learn, we trained a Random Forest model on the historical data that we cleaned. The model was able to predict each team's wins in the playoffs with an impressive average RMSE of 1.1 wins. We then used our trained model to predict the 2025 NBA playoffs, and are looking forward to seeing how it performs. 
+Python: pandas, NumPy, scikit-learn, NLTK
 
-Sentiment Analysis: 
-In addition to traditional team statistics, we wanted to incorporate fan sentiment into our model. To do this, we web scraped data from Reddit using Python, and then performed sentiment analysis with the NLTK library to gauge how fans were feeling about their team's performance. 
+Visualization: matplotlib, seaborn
 
-Future Improvements: 
-We plan to continuously improve the model by adding more niche data points, refining the sentiment analysis process, and exploring other machine learning techniques. Our ultimate goal is to build a robust model that can accurately predict the outcome of future NBA playoff seasons.
+Modeling: Random Forest Regressor
+
+Data Source: Basketball stats (2016–2024 seasons), Reddit fan posts
+
+📊 Workflow
+1. Data Preprocessing
+
+Collected and cleaned team-level stats (field goals, turnovers, rebounds, etc.) for 2016–2024 seasons.
+
+Performed extensive wrangling with pandas to ensure consistency across years.
+
+2. Exploratory Data Analysis (EDA)
+
+Analyzed trends in playoff success with pandas, matplotlib, and seaborn.
+
+Identified correlations between key stats and playoff wins.
+
+3. Predictive Modeling
+
+Trained a Random Forest model on historical data.
+
+Achieved average RMSE of 1.1 playoff wins on validation.
+
+Applied model to predict 2025 playoff outcomes.
+
+4. Sentiment Analysis
+
+Scraped Reddit posts related to NBA teams.
+
+Applied NLTK sentiment analysis to quantify fan sentiment.
+
+Incorporated sentiment scores as model features to improve predictions.
+
+🚀 Results
+
+Robust predictive performance with RMSE ≈ 1.1 wins.
+
+Captures both on-court performance and fan perception.
+
+Currently forecasting the 2025 NBA Playoffs (results pending).
+
+🔮 Future Improvements
+
+Add niche data sources (injury reports, player tracking data).
+
+Refine sentiment analysis with transformer-based NLP models.
+
+Experiment with alternative ML models (XGBoost, neural networks).
+
+Deploy as a web app for interactive playoff predictions.
